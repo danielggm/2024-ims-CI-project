@@ -14,13 +14,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python ${{ matrix.python-version }}
+    - name: Set up Python ${{ matrix.python-ve/danielggm/2024-ims-CI-project/actions/runs/8297538211/job/22708884021rsion }}
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run:
-        python -m pip install pytest numpy
+        python -m pip install pytest numpy brewing
+
     - name: Test with pytest
       run:
         pytest 
