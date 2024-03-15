@@ -26,4 +26,4 @@ jobs:
         pip install .
     - name: Test with pytest
       run:
-        pytest -sv hands_on/pyanno_voting
+        pytest -sv test_brewing/test_brewing.py
